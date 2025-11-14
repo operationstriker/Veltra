@@ -1,0 +1,23 @@
+const display = document.getElementById("display")
+let timer = null
+let startTime = 0
+let elapsedTime = 0;
+let isRunning = false
+
+
+
+function Start() {
+    if(!isRunning){
+        startTime = Date.now() - elapsedTime
+        timer = setInterval(update, 10)
+    }
+}
+
+function Reset() {
+
+}
+
+function Stop() {
+   alert("F")
+}
+
